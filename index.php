@@ -64,7 +64,7 @@
 		Logout  </a>
 		
 </div> 
-		<center>
+<center>
 			<h1> product List</h1>
 			<table>
 				<tr>
@@ -94,19 +94,20 @@
 						echo "<td>". $Description . "</td>";
 						echo "<td>". $Purchase_price . "</td>";
 						echo "<td>". $Quantity . "</td>";
-						// echo "<td>". $image . "</td>";
+						echo "<td>". "<img src='$image' alt='picture' width='100px' height='100px' >" . "</td>";
 						echo "<td> <a href='file_upload.php?edit_ID=$IDd'>upload</a></td>";
-						echo "<td> <a href='editForm.php?edit_ID=$IDd'><button>Edit</button></a></td>";
-						echo "<td> <a href='delete.php?del_ID=$IDd'><button>Delete</button></a></td>";
+						echo "<td> <a href='editForm.php?edit_ID=$IDd'>Edit</a></td>";
+						echo "<td> <a href='delete.php?del_ID=$IDd'>Delete</a></td>";
 					echo "</tr>";
 				}
 				?>
 				
 				<tr>
-					<td colspan="6"><a href="insertForm.php"><button>Insert Record</button></a></td>
+					<td colspan="6"><a href="insertForm.php">Insert Record</a></td>
 				</tr>
 			</table>
 		</center>
+
 
 </body>
 </html>

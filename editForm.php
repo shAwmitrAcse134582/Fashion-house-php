@@ -116,7 +116,7 @@
         </header>
 	
 		<h1>Edit Form</h1>
-		<form method="POST" action="edit.php?d_ID=<?php echo $ID?>">
+		<form method="POST" action="edit.php?d_ID=<?php echo $ID?>"  enctype="multipart/form-data">
 			<label>Name</label>
 			<input type="text" value= " <?php echo $nam ?> " name="f_name" required> <br> <br>
 
@@ -129,9 +129,18 @@
 			<label>Quantity</label>
 			<input type="text" placeholder="Quantity" value= " <?php echo $Quantity ?> " name="Quantity" required> <br> <br>
 
-      <label for="img">Picture:</label>
-       <input type="file" name="uploadfile" id="uploadfile"><br><br>
-			
+            <!-- <label>Image</label>
+			<input type="text" placeholder="Image" value= " <?php echo $image ?> " name="Image" required> <br> <br> -->
+			<!-- <center>	
+				<h1>File Uploading Test</h1>
+				<form action="upload.php" method="post" enctype="multipart/form-data">
+	  				<label>Select your file:</label>
+	  				<input type="file" name="file_name" id="file_upload"> <br/> <br/>
+	  				<input type="submit" value="Upload" name="submit">
+				</form>
+			</center> -->
+			<label>Select your file:</label>
+			<input type="file" name="fileToUpload" id="fileToUpload"> <br/> <br/>
 			<input type="submit" value="update">
 		</form>
 		

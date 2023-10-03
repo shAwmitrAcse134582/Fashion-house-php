@@ -109,8 +109,8 @@ if(empty($email) || empty ($password)){
 			<input type="text" placeholder="Purchased Price" name="f_price" required> <br> <br>
 			<label>Quantity</label>
 			<input type="text" placeholder="Quantitiy" name="f_quantity" required> <br> <br>
-			<label for="img">Picture:</label>
-          <input type="file" name="uploadfile" id="uploadfile"><br><br>
+            <label>Select your file:</label>
+			<input type="file" name="fileToUpload2" id="fileToUpload2"> <br/> <br/>
 			
 			<input type="submit" value="INSERT">
 		</form>
